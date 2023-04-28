@@ -1,0 +1,40 @@
+nav {
+  background-color: steelblue;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+h1 {
+  color: #000;
+}
+
+p {
+  padding: 10px;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  border: 1px solid steelblue;
+  padding: 5px;
+  box-shadow: 0 0 30px gray;
+}
+
+main {
+  max-width: 840px;
+}
+
+aside {
+  margin: 1em;
+  border: 1px solid #ccc;
+  padding: 1em;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+}
