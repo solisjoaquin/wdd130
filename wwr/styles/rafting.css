@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #231f20;
+  --secondary-color: #bb4430;
+  --accent-color: #efe6dd;
+  --additional-accent-color: #f3dfa2;
+  --heading-font: "Spectral", sans-serif;
+  --paragraph-font: "Inter", sans-serif;
+  --nav-background-color: #efe6dd;
+  --nav-link-color: #bb4430;
+  --nav-hover-link-color: #231f20;
+  --nav-hover-background-color: #7ebdc2;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+header {
+  background-color: var(--accent-color);
+  padding: 20px;
+}
+
+p {
+  padding: 25px;
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  padding: 20px;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+nav a.active {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
