@@ -46,6 +46,7 @@ main img {
 aside {
   text-align: center;
   position: relative;
+  max-width: 840px;
 }
 
 aside h2 {
