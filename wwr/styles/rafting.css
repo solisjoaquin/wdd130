@@ -60,3 +60,34 @@ nav a.active {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
+
+/* make the div with the class of hero is positioned relative in order the h1 and the article elements to be positioned on top of the hero image using absolute positioning */
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--accent-color);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.hero article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--accent-color);
+  text-align: center;
+}
