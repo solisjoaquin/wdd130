@@ -33,15 +33,17 @@ h6 {
 header {
   background-color: var(--accent-color);
   padding: 20px;
-}
-
-p {
-  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav {
   background-color: var(--nav-background-color);
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
@@ -90,4 +92,29 @@ nav a.active {
   transform: translate(-50%, -50%);
   color: var(--accent-color);
   text-align: center;
+}
+
+.footer {
+  background-color: var(--accent-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.footer a.active {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
 }

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css" />
+    <meta name="Rafting page" content="Rafting page" />
+    <meta name="author" content="Joaquin Solis" />
+    <style>
+      .hero {
+        background-image: url("images/rafting1_600.jpg");
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .hero h1 {
+        margin: 0;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+      }
+
+      .newsletter {
+        background-color: #231f20;
+        color: #fff;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .newsletter h2 {
+        margin: 0;
+      }
+
+      .newsletter form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .newsletter label {
+        display: block;
+        margin: 0.5rem;
+      }
+
+      .newsletter input {
+        padding: 0.5rem;
+      }
+
+      .newsletter input[type="submit"] {
+        background-color: #bb4430;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+      }
+
+      .newsletter input[type="submit"]:hover {
+        background-color: #231f20;
+      }
+
+      .cta {
+        background-color: #bb4430;
+        color: #fff;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .cta h2 {
+        margin: 0;
+      }
+
+      .cta a {
+        background-color: #231f20;
+        color: #fff;
+        padding: 1rem;
+        text-decoration: none;
+      }
+
+      .cta a:hover {
+        background-color: #bb4430;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+      }
+
+      .grid img {
+        width: 100%;
+        height: auto;
+      }
+
+      .grid p {
+        margin: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="/wwr/images/rafting-logo.png" alt="rafting logo" width="150" />
+
+      <nav>
+        <a href="/wwr/index.html">Home</a>
+        <a href="/wwr/contact.html">Contact</a>
+        <a href="/wwr/trips.html">Trips</a>
+        <a href="/wwr/about.html">About us</a>
+        <a href="/wwr/site-plan-rafting.html">White Water Rafting Siteplan</a>
+        <a target="_blank" href="https://linkedin.com">Linkedin</a>
+        <a target="_blank" href="https://facebook.com">Facebook</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>White Water Rafting</h1>
+        <p>
+          White water rafting is a recreational outdoor activity that uses an
+          inflatable raft to navigate a river or other body of water. This is
+          often done on whitewater or different degrees of rough water. Dealing
+          with risk and the need for teamwork is often a part of the experience.
+        </p>
+      </section>
+
+      <section class="newsletter">
+        <h2>Sign up for our newsletter</h2>
+        <form action="wwr/rafting.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+          <input type="submit" value="Sign up" />
+        </form>
+      </section>
+
+      <section class="cta">
+        <h2>Ready to book your trip?</h2>
+        <a href="wwr/trips.html">Book Now</a>
+      </section>
+
+      <div class="grid">
+        <div class="grid-item">
+          <img src="images/rafting1_600.jpg" alt="Rafting 1" />
+        </div>
+        <div class="grid-item">
+          <img src="images/rafting19_600.jpg" alt="Rafting 2" />
+        </div>
+        <div class="grid-item">
+          <img src="images/rafting53_600.jpg" alt="Rafting 3" />
+        </div>
+        <div class="grid-item">
+          <img src="images/rafting4_600.jpg" alt="Rafting 4" />
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>©️2023 - Joaquin Solis - Argentina</p>
+      <nav>
+        <a href="https://facebook.com"
+          ><img src="images/icons/facebook.png" width="20" alt="facebook logo"
+        /></a>
+        <a href="https://twitter.com"
+          ><img src="images/icons/twitter.png" width="20" alt="twitter logo"
+        /></a>
+        <a href="https://instagram.com"
+          ><img
+            src="images/icons/instagram.png"
+            width="20"
+            alt="instagram logo"
+        /></a>
+      </nav>
+      <small>
+        <a href="images/home-wireframe.png">Trips Wireframe</a>
+      </small>
+    </footer>
+  </body>
+</html>

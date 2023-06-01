@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <meta name="Contact page" content="Contact page" />
+    <meta name="author" content="Joaquin Solis" />
+    <link rel="stylesheet" href="styles/rafting.css" />
+    <style>
+      .company-info {
+        margin: 1rem;
+        padding-bottom: 2rem;
+      }
+
+      .company-info h2 {
+        margin: 1rem;
+      }
+
+      .company-info p {
+        margin: 1rem;
+        padding-top: 2rem;
+      }
+
+      .company-info a {
+        background-color: #231f20;
+        color: #fff;
+        padding: 1rem;
+        text-decoration: none;
+      }
+
+      .company-info a:hover {
+        background-color: #bb4430;
+      }
+
+      .employee-title {
+        margin: 2rem;
+      }
+
+      .employee-profiles {
+        margin: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .employee-profiles h2 {
+        margin: 1rem;
+      }
+
+      .employee-profile {
+        margin: 1rem;
+        background: #f2f2f2;
+      }
+
+      .employee-profile img {
+        width: 150px;
+        height: auto;
+      }
+
+      .employee-profile p {
+        margin: 1rem;
+      }
+
+      .employee-profile h3 {
+        margin: 1rem;
+      }
+
+      .contact-form {
+        margin: 1rem;
+      }
+
+      .contact-form h2 {
+        margin: 1rem;
+      }
+
+      .contact-form form {
+        margin: 1rem;
+      }
+
+      .contact-form input {
+        margin: 1rem;
+      }
+
+      .contact-form textarea {
+        margin: 1rem;
+        width: 100%;
+        height: 10rem;
+        resize: none;
+        padding: 1rem;
+        font-size: 1rem;
+        border: 1px solid #231f20;
+        box-sizing: border-box;
+        outline: none;
+      }
+
+      .contact-form button {
+        background-color: #231f20;
+        color: #fff;
+        padding: 1rem;
+        text-decoration: none;
+      }
+
+      .contact-form button:hover {
+        background-color: #bb4430;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="/wwr/images/rafting-logo.png" alt="rafting logo" width="150" />
+
+      <nav>
+        <a href="/wwr/index.html">Home</a>
+        <a href="/wwr/contact.html">Contact</a>
+        <a href="/wwr/trips.html">Trips</a>
+        <a href="/wwr/about.html">About us</a>
+        <a href="/wwr/site-plan-rafting.html">White Water Rafting Siteplan</a>
+        <a target="_blank" href="https://linkedin.com">Linkedin</a>
+        <a target="_blank" href="https://facebook.com">Facebook</a>
+      </nav>
+    </header>
+    <main>
+      <section class="company-info">
+        <h2>Company Information</h2>
+        <p>
+          123 Main St<br />
+          Anytown, US 12345<br />
+          1-800-555-5555
+        </p>
+        <p>
+          <a href="mailto:fake@gmail.com" target="_blank"> Mail Us </a>
+        </p>
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.630742821035!2d-73.9862276845939!3d40.75664097932763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0
+                x89c259f4b7c2b5c5%3A0x2e2b5c5d0b7f9225!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v162334811
+                5149!5m2!1sen!2sus"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </p>
+      </section>
+
+      <section>
+        <h2 class="employee-title">Employee Profiles</h2>
+
+        <div class="employee-profiles">
+          <div class="employee-profile">
+            <img
+              src="images/employees/profile1.jpg"
+              alt="employee 1"
+              width="200"
+              height="200"
+            />
+            <p>John Doe</p>
+            <p>CEO</p>
+          </div>
+          <div class="employee-profile">
+            <img
+              src="images/employees/profile2.jpg"
+              alt="employee 2"
+              width="200"
+              height="200"
+            />
+            <p>Jane Doe</p>
+            <p>CTO</p>
+          </div>
+          <div class="employee-profile">
+            <img
+              src="images/employees/profile3.jpg"
+              alt="employee 3"
+              width="200"
+              height="200"
+            />
+            <p>John Smith</p>
+            <p>Lead Developer</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="contact.php" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <br />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="reason">Reason for contacting us</label>
+          <ul>
+            <li>
+              <input
+                type="radio"
+                id="general"
+                name="reason"
+                value="general"
+                checked
+              />
+              <label for="general">General</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="reservation"
+                name="reason"
+                value="reservation"
+              />
+              <label for="reservation">Reservation</label>
+              <div class="check"></div>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="suggestion"
+                name="reason"
+                value="suggestion"
+              />
+              <label for="suggestion">Suggestion</label>
+              <div class="check"></div>
+            </li>
+          </ul>
+          <label for="message">Message</label>
+          <br />
+          <textarea id="message" name="message" required></textarea>
+          <br />
+          <input
+            type="checkbox"
+            id="subscribe"
+            name="subscribe"
+            value="yes"
+            checked
+          />
+          <label for="subscribe"
+            >Please subscribe me to the monthly newsletter</label
+          >
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>©️2023 - Joaquin Solis - Argentina</p>
+      <nav>
+        <a href="https://facebook.com"
+          ><img src="images/icons/facebook.png" width="20" alt="facebook logo"
+        /></a>
+        <a href="https://twitter.com"
+          ><img src="images/icons/twitter.png" width="20" alt="twitter logo"
+        /></a>
+        <a href="https://instagram.com"
+          ><img
+            src="images/icons/instagram.png"
+            width="20"
+            alt="instagram logo"
+        /></a>
+      </nav>
+      <small>
+        <a href="images/contact-wireframe.png">Contact Wireframe</a>
+      </small>
+    </footer>
+  </body>
+</html>

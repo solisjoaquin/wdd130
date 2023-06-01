@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Trips</title>
+    <meta name="Trips page" content="Trips page" />
+    <meta name="author" content="Joaquin Solis" />
+    <link rel="stylesheet" href="styles/rafting.css" />
+    <style>
+      .trip {
+        margin: 1rem;
+      }
+      .trip img {
+        width: 100%;
+        height: auto;
+      }
+
+      .trip p {
+        margin: 1rem;
+      }
+
+      .trip h2 {
+        margin: 1rem;
+      }
+
+      .call-to-action {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        text-align: center;
+        padding: 3rem;
+      }
+
+      .call-to-action h1 {
+        margin-bottom: 4rem;
+      }
+
+      .call-to-action a {
+        background-color: #231f20;
+        color: #fff;
+        padding: 1rem;
+        text-decoration: none;
+      }
+
+      .call-to-action a:hover {
+        background-color: #bb4430;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      table caption {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      table th {
+        background-color: #231f20;
+        color: #fff;
+        padding: 1rem;
+      }
+
+      table td {
+        border: 1px solid #231f20;
+        padding: 1rem;
+      }
+
+      table tfoot td {
+        background-color: #231f20;
+        color: #fff;
+        padding: 1rem;
+      }
+
+      table tfoot td[colspan] {
+        text-align: center;
+      }
+
+      table tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      table tr:hover {
+        background-color: #bb4430;
+        color: #fff;
+      }
+
+      @media (min-width: 768px) {
+        .trip {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .trip img {
+          width: 50%;
+          height: auto;
+        }
+
+        .trip p {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="/wwr/images/rafting-logo.png" alt="rafting logo" width="150" />
+
+      <nav>
+        <a href="/wwr/index.html">Home</a>
+        <a href="/wwr/contact.html">Contact</a>
+        <a href="/wwr/trips.html">Trips</a>
+        <a href="/wwr/about.html">About us</a>
+        <a href="/wwr/site-plan-rafting.html">White Water Rafting Siteplan</a>
+        <a target="_blank" href="https://linkedin.com">Linkedin</a>
+        <a target="_blank" href="https://facebook.com">Facebook</a>
+      </nav>
+    </header>
+    <div class="call-to-action">
+      <h1>
+        With over 30 years of experience, we are the best in the business.
+      </h1>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+
+    <div class="trip">
+      <h2>Colorado River</h2>
+      <img src="images/rafting1_600.jpg" alt="Colorado River" />
+      <p>
+        The Colorado River is the most popular river for rafting in the United
+        States. It is located in the state of Colorado and is a great river for
+        beginners and experts alike. The river is 1,450 miles long and has a
+        maximum depth of 1,450 feet. The river is also home to many different
+        species of fish, including trout, bass, and catfish.
+      </p>
+    </div>
+
+    <div class="trip">
+      <h2>Arkansas River</h2>
+      <img src="images/rafting43_600.jpg" alt="Arkansas River" />
+      <p>
+        The Arkansas River is a major tributary of the Mississippi River. It
+        flows through the states of Colorado, Kansas, Oklahoma, and Arkansas. It
+        is the sixth longest river in the United States and the second longest
+        tributary of the Mississippi River. The river is also home to many
+        different species of fish, including trout, bass, and catfish.
+      </p>
+    </div>
+
+    <div class="trip">
+      <h2>Salmon River</h2>
+      <img src="images/rafting53_600.jpg" alt="Salmon River" />
+      <p>
+        The Salmon River is a tributary of the Columbia River, which flows from
+        the Rocky Mountains to the Pacific Ocean. It is the longest river in
+        Idaho and the second longest river in the United States. The river is
+        also home to many different species of fish, including trout, bass, and
+        catfish.
+      </p>
+    </div>
+
+    <table>
+      <caption>
+        Trip Information
+      </caption>
+      <thead>
+        <tr>
+          <th>Trip</th>
+          <th>Length</th>
+          <th>Difficulty</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Colorado River</td>
+          <td>3 days</td>
+          <td>Beginner</td>
+          <td>$500</td>
+        </tr>
+        <tr>
+          <td>Arkansas River</td>
+          <td>2 days</td>
+          <td>Intermediate</td>
+          <td>$400</td>
+        </tr>
+        <tr>
+          <td>Salmon River</td>
+          <td>5 days</td>
+          <td>Expert</td>
+          <td>$700</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="4">All trips include food and lodging.</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <footer class="footer">
+      <p>©️2023 - Joaquin Solis - Argentina</p>
+      <nav>
+        <a href="https://facebook.com"
+          ><img src="images/icons/facebook.png" width="20" alt="facebook logo"
+        /></a>
+        <a href="https://twitter.com"
+          ><img src="images/icons/twitter.png" width="20" alt="twitter logo"
+        /></a>
+        <a href="https://instagram.com"
+          ><img
+            src="images/icons/instagram.png"
+            width="20"
+            alt="instagram logo"
+        /></a>
+      </nav>
+      <small>
+        <a href="images/trips-wireframe.png">Trips Wireframe</a>
+      </small>
+    </footer>
+  </body>
+</html>
