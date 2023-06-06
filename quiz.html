@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
     <style>
+      body {
+        font-family: sans-serif;
+        color: #000;
+        background-color: #cedeff;
+      }
+
       form {
         margin: 1rem;
       }
@@ -16,21 +22,27 @@
       }
 
       form input[type="text"],
-      form textarea {
+      form textarea,
+      form input[type="number"] {
         display: block;
         margin: 1rem;
-        width: 100%;
+        padding: 0.5rem;
       }
 
       form select {
         display: block;
         margin: 1rem;
-        width: 100%;
+        padding: 0.5rem;
       }
 
       form button {
         display: block;
         margin: 1rem;
+        background-color: blue;
+        color: #fff;
+        border: none;
+        padding: 1rem;
+        border-radius: 0.5rem;
       }
     </style>
   </head>
