@@ -8,6 +8,53 @@
     <meta name="about page" content="About page" />
     <meta name="author" content="Joaquin Solis" />
     <link rel="stylesheet" href="styles/rafting.css" />
+    <style>
+      .hero-about h1 {
+        text-align: center;
+      }
+      .hero-about article {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero-about article p {
+        width: 50%;
+        margin: 0;
+        padding: 2rem;
+      }
+      .hero-about article img {
+        height: 10rem;
+        padding: 1rem;
+      }
+
+      .hero-about {
+        position: relative;
+      }
+
+      .hero-about img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .hero-about .sub-section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .sub-section {
+        width: 100%;
+      }
+
+      .sub-section img {
+        width: 20rem;
+        height: 30rem;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -30,17 +77,20 @@
     </header>
     <main>
       <div class="hero-about">
-        <!-- <img src="/wwr/images/hero.avif" alt="hero image" /> -->
-        <h1>Rafting Xtreme</h1>
-        <article>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-            libero iusto eaque nesciunt sapiente voluptates alias tenetur
-            cupiditate veritatis quaerat itaque incidunt repudiandae, provident
-            animi eveniet soluta voluptatem exercitationem molestiae.
-          </p>
-          <img src="./images/rafting58_600.jpg" alt="article image" />
-        </article>
+        <img src="./images/hero.avif" alt="hero image" />
+        <div class="sub-section">
+          <h1>Rafting Xtreme</h1>
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, libero iusto eaque nesciunt sapiente voluptates alias
+              tenetur cupiditate veritatis quaerat itaque incidunt repudiandae,
+              provident animi eveniet soluta voluptatem exercitationem
+              molestiae.
+            </p>
+            <img src="./images/rafting58_600.jpg" alt="article image" />
+          </article>
+        </div>
       </div>
 
       <section>
