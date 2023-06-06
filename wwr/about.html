@@ -29,6 +29,7 @@
 
       .hero-about {
         position: relative;
+        padding: 1rem;
       }
 
       .hero-about img {
@@ -53,6 +54,24 @@
         width: 20rem;
         height: 30rem;
         object-fit: cover;
+      }
+
+      .section-history {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      .section-history img {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+      }
+
+      .section-grid {
+        padding: 1rem;
       }
     </style>
   </head>
@@ -93,7 +112,7 @@
         </div>
       </div>
 
-      <section>
+      <section class="section-history">
         <h2>History</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat natus
@@ -101,8 +120,9 @@
           aliquid deleniti rem nesciunt, ducimus ipsum blanditiis quod, amet
           culpa a odio.
         </p>
+        <img src="./images/rafting58_600.jpg" alt="rafting image 1" />
       </section>
-      <section>
+      <section class="section-grid">
         <h2>Adventure Awaits You!</h2>
         <div class="grid">
           <img src="./images/rafting1_600.jpg" alt="rafting image 1" />
