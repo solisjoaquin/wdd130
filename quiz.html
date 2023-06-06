@@ -6,36 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
     <style>
-      body {
+      .body-quiz {
         font-family: sans-serif;
         color: #000;
         background-color: #cedeff;
       }
 
-      form {
+      .form-quiz {
         margin: 1rem;
       }
 
-      form label {
+      .form-quiz label {
         display: block;
         margin: 1rem;
       }
 
-      form input[type="text"],
-      form textarea,
-      form input[type="number"] {
-        display: block;
-        margin: 1rem;
-        padding: 0.5rem;
-      }
-
-      form select {
+      .form-quiz input[type="text"],
+      .form-quiz textarea,
+      .form-quiz input[type="number"] {
         display: block;
         margin: 1rem;
         padding: 0.5rem;
       }
 
-      form button {
+      .form-quiz select {
+        display: block;
+        margin: 1rem;
+        padding: 0.5rem;
+      }
+
+      .form-quiz button {
         display: block;
         margin: 1rem;
         background-color: blue;
@@ -46,8 +46,8 @@
       }
     </style>
   </head>
-  <body>
-    <form action="">
+  <body class="body-quiz">
+    <form class="form-quiz" action="">
       <label for="q1">What are Tags in HTML?</label>
       <input type="text" name="q1" id="q1" />
 
